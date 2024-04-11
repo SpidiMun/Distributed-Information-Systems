@@ -6,7 +6,7 @@
 using namespace std;
 
 #define epsilon 1e-6
-#define matrix_size 1000
+#define matrix_size 1500
 
 vector<double> GaussSolve(vector<double>& matrix)
 {
