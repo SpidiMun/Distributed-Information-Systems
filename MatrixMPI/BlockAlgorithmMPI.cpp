@@ -14,7 +14,7 @@ int* Mul(int* matrix1, int* matrix2, int* result, int blockSize)
 {
     for (int i = 0; i < blockSize; i++) { // строки
         for (int k = 0; k < row_size; k++) { // счёт
-            for (int j = 0; j < column_size; j++) { // столбцы
+            for (int j = 0; j < block_size; j++) { // столбцы
                 result[row_size * i + j] += matrix1[row_size * i + k] * matrix2[row_size * k + j];
             }
         }
